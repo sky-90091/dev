@@ -1,3 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://dev.skycoin.net/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "SkyCoin Developer Documentation"
+theme = "skycoin"
