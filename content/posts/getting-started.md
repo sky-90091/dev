@@ -10,15 +10,19 @@ Our setup consists of Following main components:
 
 * Skycoin [Teller](https://github.com/skycoin/teller)
 
+---
+
 # Quick Start
 
-Both the node & teller are developed in [Go](https://golang.org/doc/install). In order to proceed, you must have a developer environment ready.
+Both the node & teller are developed in [Go](https://golang.org/doc). In order to proceed, you must have a developer environment [ready](https://golang.org/doc/install).
+
+---
 
 ## Skycoin Node:
 
-This is used to run a full Skycoin Node on the network. It downloads & stores the full chain on disk. It is used for sending signed transactions to the network and verify transactions.
+This is a full Skycoin Node on the network. It downloads & stores the full chain on disk. It is used for sending signed transactions to the network and verify transactions.
 
-The Command Line tools interact with the node over JSON-RPC.
+Command Line tools interact with the node over JSON-RPC.
 
 ### Download the Code
 
@@ -41,7 +45,11 @@ skycoin
 
 Note, that on first start & all subsequent starts, the node will connect to peers & download remaining blocks. The storage size is however quite modest ( 41 M as of Jan 18).
 
+The node makes a web-ui available on http://localhost:6420/.
+
 ### Client [Reference](https://github.com/skycoin/skycoin/blob/develop/cmd/cli/README.md)
+
+The client interacts with the node over JSON-RPC.
 
 ```
 cd $GOPATH/src/github.com/skycoin/skycoin/
@@ -73,7 +81,11 @@ Then `teller -h` to see the command-line options. The teller can be now be start
 teller
 ```
 
+Teller's web-ui is available on http://localhost:7071/.
+
 Further setup is required in order to get the teller connected with the Skycoin, Bitcoin & Ethereum nodes.
+
+---
 
 Please refer to the README in corresponding [Teller](https://github.com/skycoin/teller) and [Skycoin](https://github.com/skycoin/skycoin) for further details.
 
